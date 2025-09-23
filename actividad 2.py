@@ -8,14 +8,18 @@ Original file is located at
 """
 
 calificaciones = []
-algo = 0
-def fng(calificaciones, sum):
+nombres = []
+algo =[]
+def fng(calificaciones, nombres):
   cal = []
   for i in range(10):
     print("ingrese la calificacion")
     calif2 = float(input())
     calificaciones.append(calif2)
-    if (calif2 >= 8.5):
-      sum=sum+1
-  return (sum)
-print ("los alumnos que tienen promedio de 8.5 son: ", fng(calificaciones, sum))
+    print("ingrese su nombre")
+    nomb2 = str(input())
+    nombres.append(nomb2)
+    if (calificaciones[i] >= 8.5):
+      algo.append(nombres[i])
+  return (algo)
+print ("los alumnos que tienen promedio de 8.5 son: ", fng(calificaciones, nombres))
